@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
 
+
+//persist the to-dos list on page refreshes:
+//consider combining the browser's localStorage with the useEffect hook
 const ToDoCard = props => {
 
   const [name, setName] = useState("");
   const [isComplete, setComplete] = useState(false);
-  const [items, setItems] = useState([
-    {name: "something", isComplete:true},
-    {name: "second task", isComplete:false},
-    {name: "third task here ---- aoetnhu", isComplete:false}
-  ]);
+  const [items, setItems] = useState([]);
 
   const addNinjaToList = e =>{
     e.preventDefault();
