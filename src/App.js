@@ -9,7 +9,7 @@ const ToDoCard = props => {
   const [isComplete, setComplete] = useState(false);
   const [items, setItems] = useState([]);
 
-  const addNinjaToList = e =>{
+  const addItemToList = e =>{
     e.preventDefault();
     let tempItems = [...items];
     tempItems.push({name: name, isComplete:isComplete});
@@ -69,7 +69,7 @@ const ToDoCard = props => {
 
       <hr/>
       <div>
-        <form onSubmit={ addNinjaToList } className="form-row justify-content-center">
+        <form onSubmit={ addItemToList } className="form-row justify-content-center">
           <label className="col-form-label">To Do</label>
           <input
             type="text"
