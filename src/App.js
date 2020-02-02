@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-
 //persist the to-dos list on page refreshes:
 //consider combining the browser's localStorage with the useEffect hook
 const ToDoCard = props => {
