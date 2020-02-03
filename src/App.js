@@ -34,6 +34,7 @@ const ToDoCard = props => {
 
   return( 
       <div className="container">
+        <em className="text-right">Barron Guadarrama</em>
         <h3 className="text-center">To Do List</h3>
           {
             items.map((item, i) =>
